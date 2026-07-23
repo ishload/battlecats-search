@@ -1,81 +1,95 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-    <title>にゃんこ大戦争真レジェンドステージ敵検索</title>
-<link rel="stylesheet" href="battlecats.css"> 
-</head>
+   <head>
+       <meta charset="UTF-8">
+       <title>にゃんこ大戦争真レジェンドステージ敵検索</title>
+       <link rel="stylesheet" href="battlecats.css"> 
+   </head>
 
-<body>
-   <center> <img src="images/header.JPG" width="600"></center>
+
+
+ <body>
+     <section>
+         <img src="images/header.JPG" class="head">
     
-   <h1>【にゃんこ大戦争】真レジェンドステージ検索</h1>
-    <div class="usage">
-    <h2>使い方</h2>
-    <p>敵で検索するとその敵が登場する真レジェステージが出てきます<br>
-    ボックスを選択して敵を選んでください</p>
-    </div> 
+         <h1>【にゃんこ大戦争】真レジェンドステージ検索</h1>
+         <div class="usage">
+             <h2>使い方</h2>
+             <p>敵で検索するとその敵が登場する真レジェステージが出てきます<br>
+              ボックスを選択して敵を選んでください</p>
+         </div> 
+     </section>
 
 
-<h2>ステージ検索</h2>
-<div class="stage">
-    <div class="search-mode">
-    <label>
-        <input type="radio" name="searchMode" value="AND" checked>
-        AND検索
-    </label>
-    
-    <label>
-        <input type="radio" name="searchMode" value="OR">
-        OR検索
-    </label>
-    </div>
 
- <div class="search">
-    <div>
-    <select class="box" id="searchbox1">
-        <option value="">敵1を選んでください</option>
-     </select>
-    <button type="button" class="clearbutton">クリア</button>
-    </div>
-    
-    <div>
-    <select class="box" id="searchbox2">
-        <option value="">敵2を選んでください</option>
-     </select>
-      <button type="button" class="clearbutton">クリア</button>
-    </div>
+     <main>
+         <h2>ステージ検索</h2>
+         <div class="stage">
+           <div class="search-mode">
+             <label>
+                 <input type="radio" name="searchMode" value="AND" checked>
+                 AND検索
+             </label>
+         
+             <label>
+                 <input type="radio" name="searchMode" value="OR">
+                 OR検索
+             </label>
+           </div>
+  
 
-    <div>
-    <select class="box" id="searchbox3">
-        <option value="">敵3を選んでください</option>
-     </select>
-      <button type="button" class="clearbutton">クリア</button>
-    </div>
- </div>
+           <div class="search">
+             <div>
+                 <select class="box" id="searchbox1">
+                     <option value="">敵1を選んでください</option>
+                 </select>
+                 <button type="button" class="clearbutton">クリア</button>
+             </div>
+     
+             <div>
+                 <select class="box" id="searchbox2">
+                      <option value="">敵2を選んでください</option>
+                 </select>
+                 <button type="button" class="clearbutton">クリア</button>
+             </div>
+ 
+             <div>
+                 <select class="box" id="searchbox3">
+                     <option value="">敵3を選んでください</option>
+                 </select>
+                 <button type="button" class="clearbutton">クリア</button>
+             </div>
+         </div>
+  
 
-  <button type="button" id="searchButton" class="index">検索</button>
+         <button type="button" id="searchButton" class="index">検索</button>
+ 
+
+         <h3>検索結果</h3>
+         <div id="result">
+         </div>
+     </main>
+ 
 
 
-<h3>検索結果</h3>
-<div id="result">
-</div>
-<div class="introduce">
-    <div class="person">
-        <img src="images/channels.jpg" class="icon">
-    <div class="person-body">
-        <p><b>りい</b><br>
-        B1<br>
-        youtubeやってるので見ていってください<br>
-        <a href="https://www.youtube.com/channel/UCEph2XcxnlbkuN02s8-E-xw">
-            youtubeチャンネル
-        </a>
-        </p>
-    </div>
-    </div>
- </div>
+     <aside class="introduce">
+         <div class="person">
+             <img src="images/channels.jpg" class="icon">
+             <div class="person-body">
+                 <p><b>りい</b><br>
+                  B1<br>
+                  youtubeやってるので見ていってください<br>
+                  <a href="https://www.youtube.com/channel/UCEph2XcxnlbkuN02s8-E-xw">
+                      youtubeチャンネル
+                  </a>
+                 </p>
+            </div>
+         </div>
+     </aside>
 
-    <script src="battlecats-data.js"></script>
-    <script src="battlecats.js"></script>
-  </body>
+
+
+     <script src="battlecats-data.js"></script>
+     <script src="battlecats.js"></script>
+ </body>
 </html>
