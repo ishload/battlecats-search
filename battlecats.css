@@ -104,7 +104,6 @@ button:active{
 
 .result{
     margin-top: 30px;
-    margin-left:2%;
     max-width:700px;
     padding: 20px;
     border: 1px solid hsl(150, 4%, 9%);
@@ -148,4 +147,17 @@ label{
 .energy{
     float:right;
     margin-right:10px;
+}
+
+@media(max-width:600px){
+    .result{
+        margin:30px auto 0;
+    }
+}
+
+@media(max-width:500px){
+    .energy{
+        float:none;
+        margin:0 auto;
+    }
 }
