@@ -2,7 +2,8 @@
 
 
 body{
-    margin:5px 50px;
+    margin:0 auto;
+    width:92%;
     background-color: rgb(229, 246, 253);
 }
 
@@ -12,9 +13,11 @@ h1{
 }
 
 .head{
-    width:600px;
     display:block;
     margin:0 auto;
+    max-width:600px;
+    height:auto;
+    width:100%;
 }
 
 .usage{
@@ -27,7 +30,9 @@ h1{
 }
 
 .stage{
-    margin:20px 20px 30px 30px;
+    margin-left:5%;
+    margin-top:30px;
+    margin-bottom:20px;
 }
 
 .search > div{
@@ -72,13 +77,14 @@ button:active{
 
 .introduce{
     border-top:1px solid black;
-    margin-top:200px;
+    margin-top:180px;
 }
 
 .person{
     border: 1px solid hsl(150, 4%, 9%);
     border-radius: 5px;
-    margin: 40px 20px;
+    margin:40px auto;
+    width:90%;
     display: flex;
     background:#fff;
 }
@@ -98,7 +104,7 @@ button:active{
 
 .result{
     margin-top: 30px;
-    margin-left:30px;
+    margin-left:2%;
     max-width:700px;
     padding: 20px;
     border: 1px solid hsl(150, 4%, 9%);
