@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 body{
     margin:0 auto;
     width:92%;
@@ -91,6 +90,14 @@ button:active{
 
 .person-body{
     margin-left:8px;
+}
+
+aside p{
+    margin:2px;
+}
+
+aside h3{
+    margin:7px 0 ;
 }
 
 .icon{
