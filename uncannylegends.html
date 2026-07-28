@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8SY7FXWPS"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q8SY7FXWPS');
+     </script>
+
+       <meta charset="UTF-8">
+       <meta name="description" content="【にゃんこ大戦争】敵を入力することでその敵が登場する真レジェンドストーリーのステージを検索できる検索ツールです．">
+       <title> 【にゃんこ大戦争】 真レジェンドストーリー ステージ検索 </title>
+       <link rel="stylesheet" href="battlecats.css"> 
+       <link rel="icon" href="images/channels.jpg">
+       <meta property="og:site_name" content="にゃんこ大戦争 真レジェンドストーリー ステージ検索">
+       <script type="application/ld+json">
+        {
+        "@context":"https://schema.org",
+        "@type":"WebSite",
+        "name":"にゃんこ大戦争 真レジェンドステージ検索",
+        "url":"https://ishload.github.io/battlecats-search/"
+        }
+      </script>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+
+
+ <body class="background1">
+     <header>
+        <nav>
+            <a href="uncannylegends.html">
+                <img src="images/uncannylegends.PNG" class="head-icon">
+                <span>真レジェンド</span>
+            </a>
+            
+
+            <p>|</p>
+
+              <a href="newlegend_zero.html">
+                 <img src="images/newlegend_zero.PNG" class="head-icon">
+                 <span>レジェンド0</span>
+              </a>
+            
+        </nav>
+     </header>
+
+
+     <section>
+         <img src="images/uncannylegends-head.JPG" class="picture" alt="真レジェンドステージ">
+    
+         <h1>【にゃんこ大戦争】真レジェンドステージ検索</h1>
+         <div class="usage">
+             <h2>使い方</h2>
+             <p>敵で検索するとその敵が登場する真レジェステージが出てきます<br>
+              ボックスを選択して敵を選んでください</p>
+         </div> 
+     </section>
+
+
+
+     <main>
+         <h2>ステージ検索</h2>
+         <div class="stage">
+           <div class="search-mode">
+             <label>
+                 <input type="radio" name="searchMode" value="AND" checked>
+                 AND検索
+             </label>
+         
+             <label>
+                 <input type="radio" name="searchMode" value="OR">
+                 OR検索
+             </label>
+           </div>
+  
+
+           <div class="search">
+             <div>
+                 <select class="box" id="searchbox1">
+                     <option value="">敵1を選んでください</option>
+                 </select>
+                 <button type="button" class="clearbutton">クリア</button>
+             </div>
+     
+             <div>
+                 <select class="box" id="searchbox2">
+                      <option value="">敵2を選んでください</option>
+                 </select>
+                 <button type="button" class="clearbutton">クリア</button>
+             </div>
+ 
+             <div>
+                 <select class="box" id="searchbox3">
+                     <option value="">敵3を選んでください</option>
+                 </select>
+                 <button type="button" class="clearbutton">クリア</button>
+             </div>
+         </div>
+  
+
+         <button type="button" id="searchButton" class="index">検索</button>
+ 
+
+         <h3>検索結果</h3>
+         <div id="result">
+         </div>
+     </main>
+ 
+
+
+     <aside class="introduce">
+         <div class="person">
+             <img src="images/channels.jpg" class="icon" alt="youtubeアイコン">
+             <div class="person-body">
+                 <h3>りい</h3>
+                  <p>B1</p>
+                  <a href="https://www.youtube.com/channel/UCEph2XcxnlbkuN02s8-E-xw">
+                      youtubeチャンネル
+                  </a>
+            </div>
+         </div>
+     </aside>
+
+
+
+     <script src="uncannylegends-data.js"></script>
+     <script src="battlecats.js"></script>
+ </body>
+</html>
