@@ -24,7 +24,7 @@ header{
     font-size:bold;
     color:white;
     background-color: rgba(120, 221, 234, 0.9);
-    border:1px solid blue;
+    border-bottom:1px solid blue;
 }
 
 .head-icon{
@@ -100,7 +100,7 @@ section{
 }
 
 .box{
-    padding: 8px;
+    padding: 8px 30px 8px 10px;
     border-radius: 4px;
 }
 
