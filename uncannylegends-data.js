@@ -1719,13 +1719,10 @@ enemies.sort((a,b)=>{
 
 
 /* 選択肢の追加 */
-const boxes = document.querySelectorAll(".box");
+const enemyList = document.getElementById("enemyList");
 
-for(const box of boxes){
-    for(const enemy of enemies){
-        box.innerHTML += 
-        `<option value="${enemy}">
-           ${enemy}
-        </option>`;
-    }
+for(const enemy of enemies){
+    enemyList.innerHTML += `
+        <option value="${enemy}">
+    `;
 }

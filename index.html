@@ -14,8 +14,8 @@
        <meta charset="UTF-8">
        <meta name="description" content="【にゃんこ大戦争】敵を入力することでその敵が登場する真レジェンドストーリーのステージを検索できる検索ツールです．">
        <title> 【にゃんこ大戦争】 真レジェンドストーリー ステージ検索 </title>
-       <link rel="stylesheet" href="/battlecats-search/battlecats.css"> 
-       <link rel="icon" href="/battlecats-search/images/uncannylegends.PNG">
+       <link rel="stylesheet" href="battlecats.css"> 
+       <link rel="icon" href="images/uncannylegends.PNG">
        <meta property="og:site_name" content="にゃんこ大戦争 真レジェンドストーリー ステージ検索">
        <script type="application/ld+json">
         {
@@ -81,25 +81,22 @@
 
            <div class="search">
              <div>
-                 <select class="box" id="searchbox1">
-                     <option value="">敵1を選んでください</option>
-                 </select>
+                 <input class="box" id="searchbox1" placeholder="敵1を選んでください" list="enemyList"> 
                  <button type="button" class="clearbutton">クリア</button>
              </div>
      
              <div>
-                 <select class="box" id="searchbox2">
-                      <option value="">敵2を選んでください</option>
-                 </select>
+                 <input class="box" id="searchbox2" placeholder="敵2を選んでください" list="enemyList">
                  <button type="button" class="clearbutton">クリア</button>
              </div>
  
              <div>
-                 <select class="box" id="searchbox3">
-                     <option value="">敵3を選んでください</option>
-                 </select>
+                 <input class="box" id="searchbox3" placeholder="敵3を選んでください" list="enemyList">
                  <button type="button" class="clearbutton">クリア</button>
              </div>
+
+             <datalist id="enemyList">
+             </datalist>
          </div>
   
 
