@@ -6,12 +6,13 @@ button.addEventListener("click", searchStage);
 const clearButtons = document.querySelectorAll(".clearbutton");
 
 for (const clearButton of clearButtons) {
-  clearButton.addEventListener("click", clearSearch);
+    clearButton.addEventListener("click", clearSearch);
 }
 
 function clearSearch(event) {
-  const box = event.target.previousElementSibling;
-  box.selectedIndex = 0;
+    const box = event.currentTarget.previousElementSibling;
+    box.value = "";
+    box.focus();
 }
 
 /* 検索 */
